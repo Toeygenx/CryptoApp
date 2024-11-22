@@ -43,6 +43,7 @@ export default function CryptoTracker() {
         const data = await response.json();
         setCryptoData(data);
       } catch (err) {
+        console.error(err);
         setError(
           "An error occurred while fetching data. Please try again later."
         );
